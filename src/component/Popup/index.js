@@ -13,15 +13,17 @@ const Popup = ({ obj, modal, setModal, curr, setCurr }) => {
           overlay: {
             width: "100%",
             height: "100%",
+            backgroundColor: "rgb(15 14 14 / 82%)",
           },
           content: {
-            left: "9.5vw",
+            top: "11vh ",
             right: "4.5vw",
-            height: "92vh",
-            width: "80%",
+            left: "8.5vw",
+            height: "88vh",
+            width: "84%",
             overflowY: "hidden",
             borderRadius: 30,
-            backgroundColor: "#877e7e38",
+            background: "transparent",
           },
         }}
       >

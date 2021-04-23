@@ -1,4 +1,37 @@
-.header {
+/* .header {
   display: grid;
+  height: 9vh;
   place-items: center;
+  background-color: #eac5e9;
+} */
+.header {
+  position: fixed;
+  display: grid;
+  height: 9vh;
+  place-items: center;
+  background-color: #e39ae1;
+  width: 100%;
+  top: 0;
+  padding: 18px;
+  padding-top: 10px;
+  z-index: 1;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.header_dark {
+  position: fixed;
+  display: grid;
+  height: 9vh;
+  place-items: center;
+
+  width: 100%;
+  top: 0;
+  padding: 18px;
+  padding-top: 10px;
+  z-index: 1;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  background-color: #7e3b7d;
 }

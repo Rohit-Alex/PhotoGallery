@@ -5,7 +5,7 @@ const Loading = () => {
   return (
     <div className="spinner_container">
       <Loader
-        type="Grid"
+        type="TailSpin"
         color="#00BFFF"
         height={100}
         width={100}

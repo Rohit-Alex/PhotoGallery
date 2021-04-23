@@ -1,29 +1,26 @@
-img {
-  width: 50%;
-  max-height: 80vh;
-}
 .wrapper_popup {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   overflow-y: hidden;
-  background-color: #877e7e38;
+
   border-radius: 1.2rem;
 }
 .leftCont {
-  max-width: 10%;
+  max-width: 5%;
 }
 .mid {
-  width: 80%;
+  width: 90%;
+  max-height: 83vh;
   border-radius: 1.2rem;
 }
 .rightIcon {
-  max-width: 10%;
+  max-width: 5%;
 }
 button {
   outline: none;
-  background-color: antiquewhite;
+  background-color: #cd49c296;
   border: none;
   border-radius: 1.2rem;
   width: 7rem;
