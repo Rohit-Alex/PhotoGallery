@@ -6,14 +6,17 @@ import Popup from "./component/Popup";
 import axios from "./axios";
 
 import InfiniteScroll from "react-infinite-scroll-component";
+
+import Loading from "./component/Loading";
 function App() {
   const [curr, setCurr] = useState(null);
   const [modal, setModal] = useState(false);
   const [obj, setObj] = useState([]);
+
   async function getData() {
     try {
       const res = await axios.get(
-        `/photos/random?client_id=8qwuB4Ka6ATLIZPFzzyICXLLqjNCotfGtU5ZWPCWRcA&count=3`
+        `/photos/random?client_id=8qwuB4Ka6ATLIZPFzzyICXLLqjNCotfGtU5ZWPCWRcA&count=7`
       );
       console.log(res.data);
       setObj([...obj, ...res.data]);
@@ -27,7 +30,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <InfiniteScroll dataLength={obj.length} next={getData} hasMore={true}>
+      <InfiniteScroll
+        dataLength={obj.length}
+        next={getData}
+        hasMore={true}
+        loader={<Loading />}
+      >
         <Images
           obj={obj}
           setCurr={setCurr}

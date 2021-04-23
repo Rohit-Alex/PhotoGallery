@@ -5,4 +5,9 @@
   width: 30rem;
   padding: 1.2rem;
   border-radius: 2rem;
+  transition: transform 450ms;
+}
+
+.image:hover {
+  transform: scale(1.08);
 }

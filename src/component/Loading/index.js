@@ -1,10 +1,11 @@
 import React from "react";
-
-const Loader = () => {
+import Loader from "react-loader-spinner";
+import "./style.css";
+const Loading = () => {
   return (
     <div className="spinner_container">
       <Loader
-        type="Puff"
+        type="Grid"
         color="#00BFFF"
         height={100}
         width={100}
@@ -14,4 +15,4 @@ const Loader = () => {
   );
 };
 
-export default Loader;
+export default Loading;

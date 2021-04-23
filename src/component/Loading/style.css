@@ -1,0 +1,4 @@
+.spinner_container {
+  display: grid;
+  place-items: center;
+}
