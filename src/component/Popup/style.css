@@ -1,8 +1,4 @@
 .wrapper_popup {
-  /* display: flex; */
-  /* flex-direction: row;
-  align-items: center;
-  justify-content: space-between; */
   overflow-y: hidden;
   position: relative;
   border-radius: 1.2rem;
@@ -31,9 +27,10 @@
   height: 10vh;
 }
 button {
+  cursor: pointer;
   outline: none;
   background-color: #1a1a1a96;
   border: none;
   border-radius: 1.2rem;
-  width: 7rem;
+  width: 5rem;
 }
