@@ -1,7 +1,6 @@
 import "./style.css";
 import Image from "./Image";
 
-import Loader from "../Loading";
 const Images = ({ obj, setCurr, setModal, getData }) => {
   return (
     <div className="wrapper">
