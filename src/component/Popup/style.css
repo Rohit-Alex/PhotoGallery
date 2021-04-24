@@ -10,7 +10,8 @@
 .leftCont {
   position: absolute;
   top: 37vh;
-  max-width: 5%;
+  width: 7vw;
+  height: 10vh;
 }
 .mid {
   width: 100%;
@@ -19,14 +20,15 @@
 }
 .bottom {
   position: absolute;
-  bottom: -1vh;
+  bottom: 0vh;
   right: 37vw;
 }
 .rightIcon {
   position: absolute;
   top: 37vh;
   right: 0vw;
-  max-width: 5%;
+  width: 7vw;
+  height: 10vh;
 }
 button {
   outline: none;

@@ -12,10 +12,11 @@ function App() {
   const [obj, setObj] = useState([]);
 
   async function getData() {
-    // const key = process.env.REACT_APP_ACCESSKEY;
+    // const accessKey = process.env.REACT_APP_ACCESSKEY;
+
     try {
       const res = await axios.get(
-        `/photos/random?client_id=8qwuB4Ka6ATLIZPFzzyICXLLqjNCotfGtU5ZWPCWRcA&count=7`
+        `/photos/random?client_id=8qwuB4Ka6ATLIZPFzzyICXLLqjNCotfGtU5ZWPCWRcA&count=15`
       );
       console.log(res.data);
       setObj([...obj, ...res.data]);

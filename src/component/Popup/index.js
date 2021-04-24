@@ -31,30 +31,30 @@ const Popup = ({ obj, modal, setModal, curr, setCurr }) => {
         }}
       >
         <div className="wrapper_popup">
-          <button className="leftCont">
-            <ArrowBackIosIcon
-              style={{ fontSize: "4.5rem", color: "white" }}
-              onClick={() =>
-                curr === 0 ? setCurr(obj.length - 1) : setCurr(curr - 1)
-              }
-            />
+          <button
+            className="leftCont"
+            onClick={() =>
+              curr === 0 ? setCurr(obj.length - 1) : setCurr(curr - 1)
+            }
+          >
+            <ArrowBackIosIcon style={{ fontSize: "4.5rem", color: "white" }} />
           </button>
 
           <img
             className="mid"
-            src={obj[curr]?.urls.regular}
+            src={obj[curr]?.urls.full}
             alt={curr?.alt_description}
           />
           <div className="bottom">
-            <MoreHorizIcon style={{ fontSize: "8.5rem", color: "white" }} />
+            <MoreHorizIcon style={{ fontSize: "6.5rem", color: "white" }} />
           </div>
-          <button className="rightIcon">
-            <ChevronRightIcon
-              style={{ fontSize: "4.5rem", color: "white" }}
-              onClick={() =>
-                curr === obj.length - 1 ? setCurr(0) : setCurr(curr + 1)
-              }
-            />
+          <button
+            className="rightIcon"
+            onClick={() =>
+              curr === obj.length - 1 ? setCurr(0) : setCurr(curr + 1)
+            }
+          >
+            <ChevronRightIcon style={{ fontSize: "5.5rem", color: "white" }} />
           </button>
         </div>
       </Modal>
